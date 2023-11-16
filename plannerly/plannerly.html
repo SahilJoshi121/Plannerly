@@ -1,0 +1,235 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Montserrat&family=Nunito:wght@900&family=Questrial&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+<script src="main.js"></script>
+
+
+<style>
+  body {
+    margin: 0px;
+  }  
+  
+  .container {
+    display: flex;
+  }
+
+  .title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #8e3a59 ;
+    margin-bottom: 0px;
+  }
+
+  .title-text {
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 45px;
+    text-shadow: 3px 3px 5px #ceba09;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+  }
+
+  .my-list {
+    background-color: #ffdead;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .my-list-text {
+    font-family: 'Quicksand';
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+  }
+
+  .list-select{
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-family: 'Questrial';
+    font-size: 25px;
+    border-radius: 5px;
+    border-width: 3px;
+    margin-bottom: 10px;
+  }
+
+  .option-text {
+    text-align: center;
+  }
+
+  .new-list {
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Questrial';
+    font-size: 25px;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: white;
+    transition: box-shadow 0.5s;
+  }
+
+  .new-list:hover {
+    box-shadow: 6px 5px 5px black;
+  }
+
+  .list {
+    width: 3000px;
+    height: 700px;
+    background-color: #fbceb1;
+  }
+
+  .list-title {
+    margin-left: 30px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Quicksand';
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #ceba09;
+  }
+  
+  .list-input {
+    margin-left: 30px;
+    width: 350px;
+    height: 50px;
+    font-family: 'Questrial';
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: box-shadow 0.5s;
+  }
+
+  .list-input:hover {
+    box-shadow: 6px 5px 5px black;
+  }
+
+  .add {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    font-family: 'Questrial';
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: box-shadow 0.5s;
+  }
+
+  .add:hover {
+    box-shadow: 5px 4px 4px black;
+    cursor: pointer;
+  }
+
+  .add:active {
+    opacity: 0.8;
+  }
+
+
+
+  .my-tasks {
+    margin-left: 30px;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-size: 30px;
+    font-family: 'Quicksand';
+    margin-bottom: 10px;
+    color: #8e3a59;
+  }
+
+  .task-box {
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    background-color: #f08080;
+    margin-left: 30px; 
+    padding-bottom: 30px;
+    
+  }
+
+  .task {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    width: auto;
+    height: 50px;
+    background: none;
+    border: none;
+    font-family: 'Quicksand';
+    font-size: 25px;
+    display: block;
+  }
+
+  .task:hover {
+    opacity: 0.5;
+  }
+
+  .active {
+    opacity: 0.6;
+    text-decoration: line-through;
+  }
+
+
+
+  
+
+
+</style>
+
+
+
+<body>
+  <div class="title">
+    <p class="title-text">
+      P L A N N E R L Y
+    </p>
+  </div>
+
+  <div class="my-list">
+    <p class="my-list-text">
+      My Lists:
+    </p>
+
+    <select class="list-select">
+      <option value="list1" class="option-text">List #1</option>
+      <option value="list2" class="option-text">List #2</option>
+      <option value="list3" class="option-text">List #3</option>
+    </select>
+
+    <button class="new-list">
+      New List +
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="list">
+      <p class="list-title">
+        List # 1
+      </p>
+  
+      <input class="list-input" placeholder="What do you need to do?" >
+      <button class="add", id="button">
+        +
+      </button>
+      <p class="my-tasks">
+        My Tasks:
+      </p>
+
+
+      <div class="task-box">
+        
+      </div>
+    </div>
+  </div>
+</body>
